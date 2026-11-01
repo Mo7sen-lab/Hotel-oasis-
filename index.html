@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel Oasis — discover your perfect getaway. Explore rooms and plan your stay.">
+  <title>Hotel Oasis | Discover Your Perfect Getaway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Hotel Oasis home"><span class="brand-mark">✦</span><span>Hotel <b>Oasis</b><small>YOUR PRIVATE ESCAPE</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      <a class="nav-book" href="#booking">Book Now <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> MORE THAN JUST A STAY</p>
+        <h1>Discover Your<br><em>Perfect Getaway.</em></h1>
+        <p class="hero-copy">Comfortable stays, beautiful surroundings, and thoughtful details. Your next unforgettable escape starts here.</p>
+        <a class="button button-gold" href="#booking">Explore Your Stay <span>→</span></a>
+      </div>
+      <div class="hero-note"><span>01</span><i></i> A PLACE TO SLOW DOWN</div>
+      <div class="hero-bottom">COASTAL LIVING <b>•</b> TIMELESS COMFORT <b>•</b> UNFORGETTABLE MOMENTS</div>
+    </section>
+
+    <section class="booking-wrap" id="booking">
+      <form class="booking-bar" id="bookingForm">
+        <label><span>CHECK IN</span><input type="date" id="checkIn" required></label>
+        <label><span>CHECK OUT</span><input type="date" id="checkOut" required></label>
+        <label><span>GUESTS</span><select id="guests"><option value="1">1 Guest</option><option value="2" selected>2 Guests</option><option value="3">3 Guests</option><option value="4">4 Guests</option><option value="5">5 Guests</option></select></label>
+        <button class="button button-blue" type="submit">Check Availability <span>→</span></button>
+      </form>
+      <p class="booking-hint" id="bookingMessage">Choose your dates to estimate your stay. This demo does not create a real reservation.</p>
+    </section>
+
+    <section class="section intro" id="experience">
+      <div><p class="eyebrow dark"><span></span> THE OASIS EXPERIENCE</p><h2>Where every stay<br>feels <em>effortless.</em></h2></div>
+      <div class="intro-copy"><p>From slow mornings by the water to evenings under the stars, Hotel Oasis is designed around the moments that make a getaway memorable.</p><a class="text-link" href="#rooms">Discover our rooms <span>↗</span></a></div>
+    </section>
+
+    <section class="section rooms-section" id="rooms">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span> STAY YOUR WAY</p><h2>Find your <em>sanctuary.</em></h2></div><p>Thoughtfully designed spaces for every kind of escape.</p></div>
+      <div class="room-grid">
+        <article class="room-card"><div class="room-photo photo-one"><span class="room-tag">MOST LOVED</span></div><div class="room-info"><div><h3>Deluxe Room</h3><p>Warm details · Garden view</p></div><strong>$120 <small>/ night</small></strong></div></article>
+        <article class="room-card"><div class="room-photo photo-two"><span class="room-tag">EXTRA SPACE</span></div><div class="room-info"><div><h3>Premium Suite</h3><p>Separate lounge · Pool view</p></div><strong>$185 <small>/ night</small></strong></div></article>
+        <article class="room-card"><div class="room-photo photo-three"><span class="room-tag">PRIVATE ESCAPE</span></div><div class="room-info"><div><h3>Oasis Villa</h3><p>Private terrace · Sea view</p></div><strong>$260 <small>/ night</small></strong></div></article>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-image"></div><div class="feature-content"><p class="eyebrow"><span></span> MADE FOR YOUR MOMENTS</p><h2>A little more<br><em>room to relax.</em></h2><p>Take a refreshing dip, enjoy a delicious meal, or simply let the day unfold at its own pace.</p><a class="button button-outline" href="#gallery">Explore the hotel <span>→</span></a></div>
+    </section>
+
+    <section class="section amenities">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span> THE LITTLE DETAILS</p><h2>Everything you need.<br><em>Nothing you don't.</em></h2></div></div>
+      <div class="amenity-grid">
+        <div class="amenity"><span>♨</span><h3>Wellness & Spa</h3><p>Find your balance with moments of calm.</p></div>
+        <div class="amenity"><span>⌁</span><h3>Infinity Pool</h3><p>Unwind with a view that goes on forever.</p></div>
+        <div class="amenity"><span>✧</span><h3>Fine Dining</h3><p>Fresh flavors and memorable evenings.</p></div>
+        <div class="amenity"><span>☼</span><h3>Beach Access</h3><p>Step out and enjoy the shoreline.</p></div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section section-heading gallery-heading"><div><p class="eyebrow"><span></span> A GLIMPSE OF OASIS</p><h2>Moments worth <em>keeping.</em></h2></div><p>Let the pictures take you there.</p></div>
+      <div class="gallery-grid"><div class="gallery-img g-one"></div><div class="gallery-img g-two"></div><div class="gallery-img g-three"></div><div class="gallery-img g-four"></div></div>
+    </section>
+
+    <section class="cta" id="contact"><p class="eyebrow"><span></span> YOUR ESCAPE IS CALLING</p><h2>Make room for<br><em>something beautiful.</em></h2><a class="button button-gold" href="#booking">Plan Your Stay <span>→</span></a></section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>Hotel <b>Oasis</b><small>YOUR PRIVATE ESCAPE</small></span></a>
+    <p>Thoughtful stays. Unforgettable moments.</p><div class="footer-links"><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+    <small class="copyright">© <span id="year"></span> Hotel Oasis. Demo concept by DevoraByte.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
